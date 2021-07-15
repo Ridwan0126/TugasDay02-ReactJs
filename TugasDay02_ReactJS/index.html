@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TugasDay02</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+      <div class="container">
+        <header id="navbar">
+            <h1 class="logo">G2 Academy</h1>
+        </header>
+        <form name='biodata' method='post' action='tutor.html'>
+          <pre>
+          <p>No         : <input type='number' name='no'></p><p id='val_no'>* Hanya boleh di-isi dengan angka</p>
+          <p>Nama    : <input type='text' name='nama' ></p><p id='val_nama'>* Masukkan Nama Mahasiswa</p>
+          <p>Kota       : <select name='kota'>
+            <option>Semarang
+            <option>Jakarta
+            <option>Bandung
+            <option>Deli serdang              
+            <option>Dll.        
+            </select></p><p>* Pilih Kota</p>
+          </pre>
+            <input type='button' onClick='terimainput()' value='Simpan'>
+            <input type='reset' value='Ulangi'>
+          </form>
+          <table border='1' id='tabelinput' width="50%" cellpadding="5px">
+            <thead>
+              <th>No</th>
+              <th>Nama</th>
+              <th>Address</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Ni Putu</td>
+                <td>Denpasar</td>
+              </tr>
+              </tbody>
+          </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Slide Foto</h2><br>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./prog.webp" style="width:100%">
+          <div class="text">Pic One</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./new.jpg" style="width:100%">
+          <div class="text">Pic Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./gambar.jpeg" style="width:100%">
+          <div class="text">Pic Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+    </section>
+    <footer>Bootcamp G2 Academy | Class : Mei 2021 ReactJS</footer>
+</body>
+</html>
