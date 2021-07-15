@@ -31,14 +31,16 @@ var slideIndex = 1;
        * input data
        */
 
+
        function terimainput(){
-        var x=document.forms['biodata']['nim'].value;
+        var x=document.forms['biodata']['no'].value;
         var y=document.forms['biodata']['nama'].value;
-        var z=document.forms['biodata']['agama'].value;
+        var z=document.forms['biodata']['kota'].value;
+
          
         if(x==null || x=="")
         {
-          document.getElementById("val_nim").innerHTML="<font color='red'><b>* Harap Isi Kolom NIM Dengan Benar</b></font>";
+          document.getElementById("val_no").innerHTML="<font color='red'><b>* Harap Isi Kolom NO Dengan Benar</b></font>";
         
             if(y==null || y=="") {
             document.getElementById("val_nama").innerHTML="<font color='red'><b>* Harap Isi Kolom NAMA Dengan Benar</b></font>";   
@@ -47,7 +49,7 @@ var slideIndex = 1;
           }
         } else {
          
-        document.getElementById("val_nim").innerHTML="<font color='purple'>* Benar</font>";
+        document.getElementById("val_no").innerHTML="<font color='purple'>* Benar</font>";
         
         if(y==null || y=="") {
           document.getElementById("val_nama").innerHTML="<font color='red'><b>* Harap Isi Kolom NAMA Dengan Benar</b></font>";   
@@ -56,7 +58,7 @@ var slideIndex = 1;
             document.getElementById("val_nama").innerHTML="<font color='purple'>* Benar</font>";
         
             var tabel = document.getElementById("tabelinput");
-            var row = tabel.insertRow(1);
+            var row = tabel.insertRow(tabel.rows.length);
             var cell1 = row.insertCell(0);
             var cell2 = row.insertCell(1);
             var cell3 = row.insertCell(2);
